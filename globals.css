@@ -261,6 +261,17 @@
   50% { opacity: 0; }
 }
 
+/* Hero eyebrow — thin underline that draws in from left after the text appears.
+   One-shot, runs once on page load, then sits as a static accent. */
+@keyframes underline-draw {
+  to { transform: scaleX(1); }
+}
+.animate-underline-draw {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underline-draw 900ms cubic-bezier(0.22, 1, 0.36, 1) 800ms forwards;
+}
+
 
 /* ---------- Marquee, floating, glow ---------- */
 

@@ -84,14 +84,15 @@ export function Hero(_props?: { stats?: { engagements: number; assets: number; c
         {/* LEFT — animated headline + search */}
         <div className="md:col-span-7 md:pr-6">
           <div
-            className="flex flex-wrap items-baseline gap-x-3 gap-y-1 opacity-0 animate-fade-up"
+            className="opacity-0 animate-fade-up"
             style={{ animationDelay: "100ms", animationFillMode: "both" }}
           >
-            <span className="font-display text-2xl italic leading-none text-pwc-orange md:text-3xl">
+            <span className="relative inline-block font-display text-3xl italic font-medium leading-none tracking-tight text-pwc-orange md:text-4xl lg:text-5xl">
               Agentic Automation
-            </span>
-            <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-pwc-steel">
-              {"Practice  /  PwC India"}
+              <span
+                aria-hidden
+                className="absolute -bottom-1.5 left-0 right-0 h-[2px] origin-left bg-pwc-orange animate-underline-draw"
+              />
             </span>
           </div>
 
