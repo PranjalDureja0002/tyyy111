@@ -87,11 +87,9 @@ export function Hero(_props?: { stats?: { engagements: number; assets: number; c
             className="opacity-0 animate-fade-up"
             style={{ animationDelay: "100ms", animationFillMode: "both" }}
           >
-            <div className="inline-flex items-center bg-pwc-orange-soft px-4 py-2">
-              <span className="text-sm font-semibold tracking-wide text-pwc-ink md:text-base">
-                Agentic Automation Portal
-              </span>
-            </div>
+            <span className="text-[11px] font-bold uppercase tracking-[0.32em] text-pwc-orange md:text-xs md:tracking-[0.4em]">
+              Agentic Automation Portal
+            </span>
           </div>
 
           <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.12] tracking-tightest text-pwc-ink md:text-5xl lg:text-6xl">
