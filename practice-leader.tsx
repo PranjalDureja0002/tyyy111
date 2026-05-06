@@ -10,35 +10,38 @@ export function PracticeLeader() {
         <div className="pwc-eyebrow">Practice leadership</div>
         <h2 className="pwc-section-title mt-3">Meet the leader of the practice</h2>
 
-        <div className="mt-12 grid items-center gap-12 md:grid-cols-12">
+        <div className="mt-12 grid items-center gap-10 md:grid-cols-12">
           {/* Photo with decorative orange parallelogram backdrop */}
-          <div className="md:col-span-5">
-            <div className="relative mx-auto max-w-sm">
+          <div className="md:col-span-3">
+            <div className="relative mx-auto w-[200px]">
               <div
                 aria-hidden
-                className="absolute -left-6 -top-6 h-20 w-32 -skew-x-[18deg] bg-pwc-orange-soft"
+                className="absolute -left-3 -top-3 h-12 w-20 -skew-x-[18deg] bg-pwc-orange-soft"
               />
               <div
                 aria-hidden
-                className="absolute -bottom-5 -right-5 h-12 w-20 -skew-x-[18deg] bg-pwc-burgundy/15"
+                className="absolute -bottom-3 -right-3 h-8 w-14 -skew-x-[18deg] bg-pwc-burgundy/15"
               />
               <div
                 aria-hidden
-                className="absolute -bottom-2 -left-2 h-1.5 w-24 -skew-x-[18deg] bg-pwc-orange"
+                className="absolute -bottom-1 -left-1 h-1 w-16 -skew-x-[18deg] bg-pwc-orange"
               />
-              <div className="relative overflow-hidden bg-white shadow-[0_24px_60px_rgba(15,15,15,0.18)]">
+              <div className="relative overflow-hidden bg-white shadow-[0_18px_40px_rgba(15,15,15,0.16)]">
                 <Image
                   src={sumitImage}
                   alt="Sumit Srivastav, Partner and Leader, Agentic Automation Practice, PwC India"
+                  width={200}
+                  height={250}
+                  sizes="200px"
+                  quality={92}
                   className="h-auto w-full"
-                  placeholder="blur"
                 />
               </div>
             </div>
           </div>
 
           {/* Bio + contact */}
-          <div className="md:col-span-7 md:pl-6">
+          <div className="md:col-span-9 md:pl-4">
             <h3 className="font-display text-4xl font-semibold tracking-tightest text-pwc-ink md:text-5xl">
               Sumit Srivastav
             </h3>
